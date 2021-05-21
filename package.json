@@ -1,0 +1,19 @@
+{
+  "name": "glitch-bot",
+  "version": "1.0.0",
+  "description": "Glitch Discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lunaboona/glitch-bot.git"
+  },
+  "author": "lunaboona",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lunaboona/glitch-bot/issues"
+  },
+  "homepage": "https://github.com/lunaboona/glitch-bot#readme"
+}
