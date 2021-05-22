@@ -87,6 +87,23 @@ const commandContribute = (message) => {
   message.reply('you can contribute at https://github.com/lunaboona/glitch-bot uwu');
 };
 
+const commandHelp = (message) => {
+  message.reply(`available commands:
+\`?piss <text?>\`: pisses on your text
+\`?holyshit\`: idk
+\`?contribute\`: please do
+\`?ajuda\`: comandos em português
+  `);
+};
+const commandAjuda = (message) => {
+  message.reply(`comandos disponíveis:
+\`?mijar <texto?>\`: mija no texto
+\`?catapimbas\`: sei la
+\`?contribute\`: link pro github
+\`?help\`: commands in english
+  `);
+};
+
 const getCommand = (message) => {
   const commandBody = message.content.slice(prefix.length);
   const args = commandBody.split(' ');
@@ -117,6 +134,14 @@ client.on('message', (message) => {
     case 'repo':
     case 'github': {
       commandContribute(message);
+      break;
+    }
+    case 'help': {
+      commandHelp(message);
+      break;
+    }
+    case 'ajuda': {
+      commandAjuda(message);
       break;
     }
   }
