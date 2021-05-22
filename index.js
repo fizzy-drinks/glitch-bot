@@ -83,6 +83,10 @@ ${EMOJI_PISS_3}${EMOJI_PISS_4}
   `);
 };
 
+const commandContribute = (message) => {
+  message.reply(', you can contribute at https://github.com/lunaboona/glitch-bot uwu');
+};
+
 const getCommand = (message) => {
   const commandBody = message.content.slice(prefix.length);
   const args = commandBody.split(' ');
@@ -107,6 +111,12 @@ client.on('message', (message) => {
     case 'holyshit':
     case 'catapimbas': {
       commandHolyshit(message);
+      break;
+    }
+    case 'contribute':
+    case 'repo':
+    case 'github': {
+      commandContribute(message);
       break;
     }
   }
