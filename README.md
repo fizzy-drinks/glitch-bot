@@ -1,6 +1,6 @@
 # glitch
 
-discord bot that does stuff very cool
+✨ the best discord bot ✨
 
 ## development
 
