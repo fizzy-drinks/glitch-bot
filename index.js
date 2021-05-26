@@ -117,8 +117,6 @@ client.on('message', (message) => {
 
   const [command, args] = getCommand(message);
 
-  if (command === 'piss') {
-  }
   switch (command) {
     case 'piss':
     case 'mijar': {
